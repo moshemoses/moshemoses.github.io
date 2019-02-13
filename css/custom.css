@@ -1,0 +1,21 @@
+.personalpic {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.portfolio {
+  height: 200px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.portlink {
+  color: black;
+}

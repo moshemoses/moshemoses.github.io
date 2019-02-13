@@ -1,0 +1,299 @@
+<html>
+  <head>
+    <title>
+      Mark Karten Creations
+    </title>
+    <!-- <script src='index.js'></script>
+  <link rel="stylesheet" href="main.css"> -->
+    <!--Import Google Icon Font-->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <!--personalized css-->
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body class=" light-blue lighten-5">
+    <div class="navbar-fixed">
+      <nav class="indigo" style="width:70%; margin-left: 15%">
+        <!-- style="width:66.75vw; -->
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Mark Karten</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li>
+              <a href="resume.html">Resume</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="container">
+      <div
+        class="divider"
+        style="height:1%; background-color:transparent;"
+      ></div>
+      <div
+        id="about"
+        class="center-align section white-text light-blue darken-3
+    valign-center"
+      >
+        <h4 style="padding: 2%">About Me</h4>
+
+        <div class="left-align white-text" style="padding:5%;">
+          Two and a half years ago I was a middle school science teacher seeking
+          a way to bring the science of electricity to life through robotics.
+          While exploring different teaching options I stumbled across the
+          Raspberry Pi in all its tasty glory. While I did not end up using this
+          platform in the classroom, I began a profound journey of tinkering and
+          programming. My internet of things projects included a smart doorbell
+          system and a api-monitoring hockey goal alarm. Exploring programming
+          have lead me away from classroom teaching and toward the magic of
+          computers and coding them. When I'm not coding I'm normally hiking
+          with my wife and son, or doing some sort of DIY construction on my
+          home. My retirement dreams involve building log cabins and tree-houses
+          on my fantasy farmstead.
+        </div>
+      </div>
+      <div
+        class="divider"
+        style="height:1%; background-color:transparent;"
+      ></div>
+
+      <div class="white-text light-blue darken-3" style="padding: 2%">
+        <div class="row" style="flex:1">
+          <img class="col s3 personalpic" src="./pics/puttingup.jpg" />
+
+          <img class="col s3 personalpic" src="./pics/swim.jpg" />
+
+          <img class="col s3 personalpic" src="./pics/iceland.jpg" />
+
+          <img class="col s3 personalpic" src="./pics/img-3362_1_orig.jpg" />
+        </div>
+      </div>
+
+      <div
+        class="divider"
+        style="height:1%; background-color:transparent;"
+      ></div>
+      <div
+        id="portfolio"
+        class="center-align section white-text light-blue darken-3
+valign-center"
+      >
+        <h4 style="padding: 2%">
+          <a id="portfolio" class="white-text">My Projects</a>
+        </h4>
+
+        <div class="divider" style="height:1%; background-color:white;"></div>
+        <!--Project --- begins here-->
+        <div class="left-align white-text" style="padding:5%;">
+          <h5 style="padding: 1%">Save For Later</h5>
+          <div class="row">
+            <!-- <img class="col s12 offset-1 portfolio" src="./pics/gematria.png" /> -->
+            <div class="center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/fmU0xobQLxc"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          Save For Later is a system that allows users to save web articles for
+          later offline-reading on a mobile app. We used a Google Chrome
+          Extension to allow users to select the articles for offline reading.
+          The extension also scrapes articles for the plain text of the article,
+          thereby softening the storage load requirements. The text data is then
+          pushed to cloud storage via Node/Express server on Heroku. The data
+          itself is actually stored on a MongoDB database which serves as our
+          central source of truth. Our React-Native app allows users to download
+          their saved articles to offline-storage thereby allowing them to read
+          despite not having access to the web.
+          <p>
+            <a class="portlink" href="https://github.com/the-keyboard-shredders"
+              >Check out our project on Git Hub</a
+            >
+          </p>
+        </div>
+        <!--project --- ends here-->
+        <div class="divider" style="height:1%; background-color:white;"></div>
+
+        <!--Project --- begins here-->
+        <div class="left-align white-text" style="padding:5%;">
+          <h5 style="padding: 1%">English Gematria Calculator</h5>
+          <div class="row">
+            <img class="col s12 offset-1 portfolio" src="./pics/gematria.png" />
+          </div>
+
+          <a class="portlink" href="https://gematria.herokuapp.com"
+            >English Gematria Calculator </a
+          >is a tool for numerology enthusiasts who wish to generate the
+          gematria (numerological value) of English words as well as find words
+          with similar equivalence. The site utilizes a stack of Node, Express,
+          Sqlite and plain old fashion Java Script to parse and return a
+          string's numerological value. It then also queries and returns from a
+          sqlite database for all English words with the same numerological
+          value. Click here to see my code on
+          <a class="portlink" href="https://github.com/moshemoses/engGematria"
+            >Git Hub</a
+          >
+        </div>
+        <!--project --- ends here-->
+        <div class="divider" style="height:1%; background-color:white;"></div>
+        <!--Project --- begins here-->
+        <div class="left-align white-text" style="padding:5%;">
+          <h5 style="padding: 1%">Dynamic MLB Scoreboard</h5>
+          <div class="row">
+            <img
+              class="col s12 offset-1 portfolio"
+              src="./pics/scoreboard.png"
+            />
+          </div>
+
+          This webpage utilizes Java Script along with AJAX technology to parse
+          the Major League Baseball API and return updated game scores.
+          <a class="portlink" href="https://github.com/moshemoses/mlbscores"
+            >Code available on GitHub</a
+          >
+        </div>
+        <!--project --- ends here-->
+        <div class="divider" style="height:1%; background-color:white;"></div>
+        <!--Project --- begins here-->
+        <div class="left-align white-text" style="padding:5%;">
+          <h5 style="padding: 1%">Time Til Shabbat</h5>
+          <div class="row">
+            <img class="col s12 offset-1 portfolio" src="./pics/ttshab.png" />
+          </div>
+
+          This project,
+          <a class="portlink" href="https://time-til-shabbat.herokuapp.com/"
+            >available here</a
+          >, utilizes Python along with a Flask backend framework to provide the
+          start time for the Jewish Sabbath and holidays. Using your IP address
+          to grab your relative location, it then parses the HebCal.com API to
+          determine the start time for Shabbat. The website also utilizes a
+          front-end Java Script countdown timer which tells users how much time
+          remains until the Shabbat begins.
+          <a
+            class="portlink"
+            href="https://github.com/moshemoses/shabbatTimeWebsite"
+            >Code available on GitHub</a
+          >
+        </div>
+        <!--project --- ends here-->
+        <div class="divider" style="height:1%; background-color:white;"></div>
+        <!--Project --- begins here-->
+        <div class="left-align white-text" style="padding:5%;">
+          <h5 style="padding: 1%">NHL Goal Tracker</h5>
+          <div class="row">
+            <img class="col s12 offset-1 portfolio" src="./pics/goal.jpg" />
+          </div>
+
+          This project, This script utilizes Python to parse the NHL scoreboard
+          API and track goals scored by your favorite team. Script is designed
+          to trigger a predetermined event each time your team scores a goal.
+          Project originally designed to be used with Raspberry Pi GPIO to
+          trigger flashing light upon goal scored. Code is
+          <a class="portlink" href="https://github.com/moshemoses/goalAlarm"
+            >available here</a
+          >
+        </div>
+        <!--project --- ends here-->
+      </div>
+      <div
+        class="divider"
+        style="height:1%; background-color:transparent;"
+      ></div>
+      <div class="white-text light-blue darken-3" style="padding: 2%">
+        <div class="center-align valign-center" style="padding: 2%">
+          <h4>Proficient In:</h4>
+        </div>
+        <div class="row">
+          <img
+            class="col s2 offset-s1 logo"
+            src="./pics/1200px-Node.js_logo.svg.png"
+          />
+
+          <img class="col s2 logo" src="./pics/1200px-React-icon.svg.png" />
+
+          <img class="col s2 logo" src="./pics/redux.png" />
+
+          <img class="col s2 logo" src="./pics/sequelize.png" />
+
+          <img class="col s2 logo" src="./pics/js.png" />
+        </div>
+        <div class="row align-center">
+          <img
+            class="col s2 offset-s2 logo"
+            src="./pics/What-is-PostgreSQL.png"
+          />
+          <img class="col s2 logo" src="./pics/rpi.png" />
+          <img class="col s2 logo" src="./pics/socket.jpg" />
+          <img class="col s2 logo" src="./pics/html.png" />
+        </div>
+      </div>
+
+      <div
+        class="divider"
+        style="height:1%; background-color:transparent;"
+      ></div>
+
+      <div class="white-text light-blue darken-3" style="padding: 5%">
+        <div class="row" style="flex:1">
+          <div class="col s12  center-align" style="padding:2%;">
+            <h4 id="contact">Be in touch:</h4>
+          </div>
+        </div>
+        <div class="row" style="flex:1">
+          <a href="https://github.com/moshemoses"
+            ><img class="col s2 offset-s3 logo" src="./pics/git.png"
+          /></a>
+
+          <a href="https://www.linkedin.com/in/kartenm/">
+            <img class="col s2 logo" src="./pics/linkedin_1.png"
+          /></a>
+          <a href="mailto:kartenm@gmail.com">
+            <img class="col s2 logo" src="./pics/email.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, {});
+      });
+    </script>
+  </body>
+</html>
